@@ -1,0 +1,46 @@
+@import '../../assets/css/variables.css';
+
+.pokedex-app-list {
+    min-height: calc(100vh - 254px);
+}
+
+.poke-card {
+    margin-bottom: 30px;
+    border-radius: 13px;
+    box-shadow: 0px 0px 21px lightgray;
+}
+
+.poke-card .card-title {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.poke-card .card-title span {
+    color: var(--blue);
+}
+
+.poke-card-img.dead {
+    filter: grayscale(100%);
+}
+
+.poke-card-status {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+.poke-card-status.dead {
+    background: var(--red);
+}
+
+.poke-card-status.alive {
+    background: var(--green);
+}
+
+.poke-card .btn {
+    width: 100%;
+    border-radius: 30px;
+}

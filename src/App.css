@@ -1,0 +1,55 @@
+@import './assets/css/variables.css';
+
+.pokedex-app {
+  padding-top: 30px;
+  position: relative;
+  border-top: 20px solid var(--blue);
+  background-image: url(./assets/img/pkm_fondo.png);
+}
+
+.pokedex-app:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background-color: var(--yellow);
+  height: 8px;
+}
+
+.pokedex-app-header  {
+  text-align: center;
+}
+
+.pokedex-app-header img {
+  max-width: 100%;
+}
+
+.pokedex-app-credits {
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+}
+
+.pokedex-app-credits img {
+  width: 50px;
+  border-radius: 50%;
+}
+
+.pokedex-app-credits::before {
+  display: none;
+  content: 'Hecho con <3 por Jullietv';
+  position: absolute;
+  background: #4a4a4a;
+  color: #fff;
+  padding: 2px 8px;
+  border-radius: 2px;
+  top: calc(50% - 9px);
+  width: 186px;
+  font-size: .8rem;
+  font-family: 'Verdana', sans-serif;
+  right: 65px;
+}
+
+.pokedex-app-credits:hover:before {
+  display: block;
+}
