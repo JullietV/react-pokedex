@@ -71,7 +71,7 @@ class Table extends Component {
                                     <InputGroupAddon className="input-group-text" addonType="prepend">
                                         <FontAwesomeIcon icon={faSearch} />
                                     </InputGroupAddon>
-                                    <Input type="email" onChange={this.handlerOnChange} name="email" id="exampleEmail" value={this.state.searchValue} placeholder="Buscar Pokemon por nombre..." />
+                                    <Input type="search" onChange={this.handlerOnChange} name="search" autoComplete="off" id="pokedexSearch" value={this.state.searchValue} placeholder="Buscar Pokemon por nombre..." />
                                 </InputGroup>
                             </FormGroup>
                         </Form>
